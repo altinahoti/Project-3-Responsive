@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+}
+
+/*të përbashkëta (menyja-ngjyra e background etj.)*/ 
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(altina.jpg);
+}
+header {
+	height:15vh;
+	background-size: cover;
+	background-position: center;                                  
+}
+ul{
+	list-style-type: none;
+	float: right;
+	margin-top: 25px;
+}
+ul li{
+	display: inline-block;
+}
+ul li a{
+	text-decoration: none;
+	color:#fff;
+	padding: 5px 20px;     
+	border:1px solid #fff;
+	transition:0.5s ease;
+}
+
+ul li a:hover{
+	background-color: #fff;  
+	color:black; 
+}
+ul li a:active {
+	background-color: red;   
+	color:#000;
+}
+.logo img{
+	float: left;
+	width: 150px;
+	height:auto;
+}
+
+/*fundi i të përbashkëtave*/
+
+
+.nav {
+	float: right; 
+	width: 60%;
+	padding: 0;
+	overflow: hidden;
+	line-height: 70px;
+	margin: 0 10px;
+
+}
+.columns{
+	display: flex;
+	flex-wrap: wrap;	
+	justify-content: space-between;
+	width: 75%;
+	margin: 100px auto 0;
+	align-items:center;
+}
+.fotoja-ime{
+	width:400px; 
+	height:500px;
+	border-radius: 5px;
+}
+
+.altina{
+	font-family:arial; 
+	font-size:40px; 
+	text-align:center; 
+}
+.student{
+	font-family:comic sans; 
+	font-size:30px; 
+	text-align:center;
+}
+.button{
+	/*position: relative;*/
+	width: 100%;
+	margin: 100px 0px 0px 40%; 
+	padding: 13px 10px;
+	transform: translate(-50%,-30%);
+	font-size: 100%;
+	font-family: sans-serif 'Open sans';
+	background-color:skyblue;
+	color:white;
+	text-decoration: none;
+	border-radius: 10px;
+	box-shadow: 0, 0, 0, 8em;
+	transition: .5s;
+
+}
+
+.button:hover{
+	background: blue;
+	color:white;
+	box-shadow: 5px, 5px ,15px,8em;
+	transition: .5s;
+}
+footer{
+	width:100%;
+	text-align: center;
+}
+
+/*mediaqueries*/
+
+/*telefon*/
+@media only screen and (min-width:0px) and (max-width:375px){
+	.columns{
+		width: 50%;
+	}
+	.fotoja-ime{
+		width: 100%;
+		max-height:  30%;
+	}
+	.altina{
+		font-size:20px;
+
+	}
+	.student{
+		font-size: 20px;
+	}
+}
+
+/*tablet*/
+
+@media only screen and (min-width:376px) and (max-width:768px)
+{  
+.columns{
+	width: 20%;
+}
+.fotoja-ime{
+	width:280px;   
+}
+
+.altina{
+	font-size:30px; 
+}
+.student{
+	font-size:35px; 
+}
+}
+
+/*llaptop*/
+
+@media only screen and (min-width:769px) and (max-width:1440px){
+.columns{
+		width: 30%;
+	}
+	.fotoja-ime{
+		width: 100%;
+		max-height:  30%;
+	}
+	.altina{
+		font-size:20px;
+
+	}
+	.student{
+		font-size: 20px;
+	}
+}
+}

@@ -1,0 +1,93 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(altina.jpg);
+}
+header {
+	height:15vh;
+	background-size: cover;
+	background-position: center;                                  
+}
+ul{
+	list-style-type: none;
+	float: right;
+	margin-top: 25px;
+}
+ul li{
+	display: inline-block;
+}
+ul li a{
+	text-decoration: none;
+	color:#fff;
+	padding: 5px 20px;     
+	border:1px solid #fff;
+	transition:0.5s ease;
+}
+
+ul li a:hover{
+	background-color: #fff;  
+	color:black; 
+}
+ul li a:active {
+	background-color: red;   
+	color:#000;
+}
+.logo img{
+	float: left;
+	width: 150px;
+	height:auto;
+}
+.main{
+	line-height: 50px;
+}
+
+/*telefon*/
+@media only screen and (min-width:0px) and (max-width:375px){
+	.tabela{
+		max-width: 250%;
+		max-height: 50%;
+		font-size: 30px;
+	}
+	.tr{
+		font-size: 20px;
+
+	}
+	.th{
+		font-size: 30px;
+	}
+	.fieldset{
+		max-width: 80%;
+		transition: 0.8s;
+	}
+	.mybio{
+		font-size: 10px;
+	}
+	.main{
+		line-height: 40%;
+	}
+	.fotoja-uiversum{
+		width: 100%;
+		height: 30%;
+	}
+}
+
+
+
+/*tablet*/
+
+@media only screen and (min-width:376px) and (max-width:768px)
+{  
+.fotoja-universum{
+	width: 60%;
+	height: 70%;
+}
+}
+/*llaptop*/
+
+@media only screen and (min-width:769px) and (max-width:1440px){
+	.fotoja-universum{
+		width: 50%;
+		height: 60%;
+	}
+}
